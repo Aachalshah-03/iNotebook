@@ -1,8 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+node_modules/
+backend/node_modules/
+.pnp
 .pnp.js
 
 # testing
@@ -10,14 +11,21 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
+
+# local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+backend/.env
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
